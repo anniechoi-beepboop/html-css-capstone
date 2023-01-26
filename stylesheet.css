@@ -7,6 +7,117 @@
     max-height: 700px;
   } */
 
+body {
+    font-family: Futura, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5em;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.nav-button {
+    margin-top: 2em;
+    background-color: #EEEEEE;
+    height: 1.5em;
+    width: auto;
+    font-size: 20px;
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+}
+
+#site-title {
+    font-size: 72px;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    background-color: white;
+    display: inline-flex;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+.header {
+    grid-column: 2 / span 1;
+    text-align: right;
+    background-color: #E24E42;
+    margin-bottom: 1em;
+}
+
+#please {
+    font-size: 72px;
+    margin: 0;
+    background-color: white;
+    display: inline-flex;
+    padding: 0 10px 10px 10px;
+    margin-right: 10px;
+}
+
+#yarn {
+    padding-top: 10px;
+    height: 400px;
+    width: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.about-me {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    background-color: #E9B000;
+    margin-top: 1em;
+    width: 100%;
+    display: grid;
+    height: 15em;
+}
+
+.about-me-inner {
+    width: 67%;
+    justify-self: center;
+    align-self: center;
+}
+
+.explore {
+    grid-column: 2 / 3;
+    grid-row: 3;
+    margin-top: 1em;
+    background-color: #EB6E80;
+    height: 25em;
+    width: 100%;
+    display: grid;
+}
+
+.explore-text {
+    width: 33%;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.about-amigurumi {
+    grid-column: 3 / 4;
+    grid-row: 3;
+    margin-top: 1em;
+    background-color: #008F95;
+    width: 100%;
+    display: grid;
+}
+
+.about-ami-text {
+    width: 33%;
+    justify-self: center;
+    align-self: center;
+}
+
 img {
     float: left;
     width:  300px;

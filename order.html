@@ -4,47 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheet-2.css">
     <title>order your custom piece!</title>
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="nav-bar">
+        <div class="nav-button">
             <a href="./index.html"><label>home</label></a>
         </div>
 
-        <div>
+        <div class="nav-button">
             <a href="./order.html"><label>order</label></a>
         </div>
 
-        <div>
+        <div class="nav-button">
             <a href="./diy.html"><label>diy</label></a>
         </div>
 
-        <div>
+        <div class="nav-button">
             <a href="./works.html"><label>works/gallery</label></a>
         </div>
 
-    <form>
-        <div>
+    </div>
+    <form class="grid">
+        <div class="title">
             <h1>an order form for whatever you desire</h1>
             <h2>(within reason)</h2>
         </div>
 
-        <fieldset>
-            <div>
+        <fieldset class="order-form">
+            <div class="name">
                 <label for="firstName">first name</label>
                 <input type="text" id="firstName" name="first_name">
             </div>
 
-            <div>
+            <div class="name">
                 <label for="lastName">last name</label>
                 <input type="text" id="lastName" name="last_name">
-            </div>
-
-            <div>
-                <h3>Contact</h3>
             </div>
 
             <div>
@@ -57,17 +54,17 @@
                 <input type="text" id="phoneNumber" name="phone_number">
             </div>
 
-            <div>
+            <div class="request">
                 <label for="request">request</label>
                 <input type="text" id="request" name="request">
             </div>
 
             <div>
                 <label for="comments">additional comments</label>
-                <textarea id="comments" name="comments">any information you'd like to me to know, like color specifications, date needed by, etc.</textarea>
+                <textarea id="comments" name="comments" rows="5" cols="40">any information you'd like to me to know, like color specifications, date needed by, etc.</textarea>
             </div>
 
-            <div>
+            <div class="agree">
                 <label for="iAgree">i understand this is local pickup only.</label>
                 <input type="checkbox" id="iAgree" name="iAgree">
             </div>
