@@ -18,3 +18,47 @@ body {
     width: auto;
     font-size: 20px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+.title {
+    grid-column: 3 / 11;
+    grid-row: 1;
+    background-color: #008F95;
+    height: 8.5vw;
+    display: grid;
+}
+
+#title-text {
+    padding: 5px;
+    font-size: 2.5vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.list-title {
+    grid-column: 4 / 10;
+    grid-row: 2;
+    background-color: #EB6E80;
+    margin: 10px 0;
+    display: grid;
+}
+
+.list-title-text {
+    padding: 10px;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.75vw;
+}
+
+.list {
+    grid-column: 4 / 10;
+    grid-row: 3;
+    background-color: #E9B000;
+    padding: 10px;
+    font-size: 1.10vw;
+}

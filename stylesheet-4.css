@@ -1,0 +1,33 @@
+body {
+    font-family: Futura, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5em;
+    background-color: white;
+    margin-bottom: 2em;
+}
+
+.nav-button {
+    margin-top: 2em;
+    background-color: #EEEEEE;
+    height: 1.5em;
+    width: auto;
+    font-size: 20px;
+}
+
+img {
+    float: left;
+    object-fit: cover;
+    height: 300px;
+    width: 400px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
