@@ -30,13 +30,13 @@ body {
 
 .home {
     display: grid;
-    grid-template-columns: 1fr 5fr 5fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
     column-gap: 20px;
 }
 
 #site-title {
-    font-size: 72px;
+    font-size: 64px;
     margin-bottom: 0;
     margin-top: 1.5em;
     background-color: white;
@@ -47,14 +47,14 @@ body {
 }
 
 .header {
-    grid-column: 2 / span 1;
+    grid-column: 3 / 7;
     text-align: right;
     background-color: #E24E42;
     margin-bottom: 1em;
 }
 
 #please {
-    font-size: 72px;
+    font-size: 64px;
     margin: 0;
     background-color: white;
     display: inline-flex;
@@ -62,16 +62,22 @@ body {
     margin-right: 10px;
 }
 
+.yarn-container {
+    grid-column: 7 / 11;
+    grid-row: 1;
+    overflow: hidden;
+}
+
 #yarn {
-    padding-top: 10px;
+    margin-bottom: 10px;
+    float: left;
     height: 400px;
     width: auto;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .about-me {
-    grid-column: 2 / 4;
+    grid-column: 3 / 11;
     grid-row: 2;
     background-color: #E9B000;
     margin-top: 1em;
@@ -87,7 +93,7 @@ body {
 }
 
 .explore {
-    grid-column: 2 / 3;
+    grid-column: 3 / span 4;
     grid-row: 3;
     margin-top: 1em;
     background-color: #EB6E80;
@@ -104,7 +110,7 @@ body {
 }
 
 .about-amigurumi {
-    grid-column: 3 / 4;
+    grid-column: 7 / span 4;
     grid-row: 3;
     margin-top: 1em;
     background-color: #008F95;
@@ -119,8 +125,5 @@ body {
 }
 
 img {
-    float: left;
-    width:  300px;
-    height: 200px;
-    object-fit: cover;
+
 }
